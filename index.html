@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>XDeoz Covid19</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- font family  -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet"> 
+
+    <style>
+        /* navbar */
+        .custom-section {
+            padding:0px !important;
+
+        }
+        .navbar-brand {
+            font-size:25px;
+            font-weight: bold;
+            font-family: 'Righteous', cursive;
+        }
+
+        .nav-link {
+            font-size:18px;
+            padding-right: 25px !important;
+            outline:none;
+            font-family: 'Monda', sans-serif;
+        }
+        .font-alfa {
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 30px;
+        }
+
+        .data-show {
+            font-size:35px;
+        }
+
+        .infected-card {
+            background-color:#afcfea;
+        }
+
+        .deaths-card {
+            background-color:#ffdfdf;
+        }
+
+        .recovered-card {
+            background-color: #d0f9d4;
+        }
+
+
+        .search-by-country-title {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .search-by-country-card {
+            background-color:#d9e3d8;
+            transition: border-radius,background-color;
+            transition-duration: 1s,1s;
+        }
+
+        .search-by-country-card:hover {
+            border-radius:10px;
+            background-color:#C1FFCE;
+        }
+
+        .search-by-country-name {
+            font-size: 20px;
+            text-decoration: none !important;
+            color:black;
+            font-family: 'Coiny', cursive;
+        }
+
+        .search-by-country-name:hover {
+            color:black;
+        }
+
+        .search-by-country-input {
+            height:50px;
+        }
+
+        .search-by-country-input:hover {
+            border-bottom: 1px solid black;
+        }
+
+        .footer-link {
+            color:black;
+            font-family: 'Monda', sans-serif;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <div class="container-fluid custom-section">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="col-md-6">
+                <a class="navbar-brand" href="#">XDezo Covid19</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="col-md-6">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hospital-directory.html">Hospital Directory</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Helpful Websites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Top Github Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar ends -->
+    <!-- First Coronavirus Global Data -->
+    <div class="container-fluid custom-layout">
+        <div class="row">
+            <h1 class="text-center w-100 pt-3 font-alfa">Covid-19 Coronavirus Pandemic</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4"> 
+                <div class="card text-left infected-card mb-2">
+                    <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Infected</h4>
+                    <p class="card-text data-show">23456</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-left deaths-card mb-2">
+                    <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Deaths</h4>
+                    <p class="card-text data-show">23456</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-left recovered-card mb-2">
+                    <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Recovered</h4>
+                    <p class="card-text data-show">23456</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="search-by-country-title">Search By Country</p>
+                  <input type="text" class="form-control search-by-country-input" name="" id="" aria-describedby="helpId" placeholder="">
+                  <div class="country-card">
+                      <div class="card-deck">
+                          <div class="card mt-2  search-by-country-card">
+                            <a href="#" class="search-by-country-name">
+                                <div class="card-body">
+                                    <h4 class="card-title">Nepal</h4>
+                                </div>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="card-deck">
+                        <div class="card mt-2  search-by-country-card">
+                          <a href="#" class="search-by-country-name">
+                              <div class="card-body">
+                                  <h4 class="card-title">Nepal</h4>
+                              </div>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="card-deck">
+                        <div class="card mt-2  search-by-country-card">
+                          <a href="#" class="search-by-country-name">
+                              <div class="card-body">
+                                  <h4 class="card-title">Nepal</h4>
+                              </div>
+                          </a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <p class="search-by-country-title">Nepal</p>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="">
+                        <div class="card-body infected-card">
+                            <h4 class="card-title font-weight-bold">Infected</h4>
+                            <p class="card-text data-show">24456</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="">
+                        <div class="card-body deaths-card">
+                            <h4 class="card-title font-weight-bold">Deaths</h4>
+                            <p class="card-text data-show">24456</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="">
+                        <div class="card-body recovered-card">
+                            <h4 class="card-title font-weight-bold">Recovered</h4>
+                            <p class="card-text data-show">24456</p>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="search-by-country-title mt-4">Health Information</h1>
+                <div class="row">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="pills-overview-tab" data-toggle="pill" href="#pills-overview" role="tab" aria-controls="pills-overview" aria-selected="true">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="pills-symptoms-tab" data-toggle="pill" href="#pills-symptoms" role="tab" aria-controls="pills-symptoms" aria-selected="false">Symptoms</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="pills-prevention-tab" data-toggle="pill" href="#pills-prevention" role="tab" aria-controls="pills-prevention" aria-selected="false">Prevention</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-treatments-tab" data-toggle="pill" href="#pills-treatments" role="tab" aria-controls="pills-treatments" aria-selected="false">Treatments</a>
+                          </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab">
+
+                            Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+                            
+                            Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.
+                            
+                            How it spreads
+                            
+                            The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or exhales. These droplets are too heavy to hang in the air, and quickly fall on floors or surfaces.
+                            
+                            You can be infected by breathing in the virus if you are within close proximity of someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose or mouth.</div>
+                        <div class="tab-pane fade" id="pills-symptoms" role="tabpanel" aria-labelledby="pills-symptoms-tab">
+
+                            COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.
+                            
+                            Most common symptoms:
+                            • fever
+                            • dry cough
+                            • tiredness
+                            
+                            Less common symptoms:
+                            • aches and pains
+                            • sore throat
+                            • diarrhoea
+                            • conjunctivitis
+                            • headache
+                            • loss of taste or smell
+                            • a rash on skin, or discolouration of fingers or toes
+                            
+                            Serious symptoms:
+                            • difficulty breathing or shortness of breath
+                            • chest pain or pressure
+                            • loss of speech or movement
+                            
+                            Seek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or health facility.
+                            
+                            People with mild symptoms who are otherwise healthy should manage their symptoms at home.
+                            
+                            On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.</div>
+                        <div class="tab-pane fade" id="pills-prevention" role="tabpanel" aria-labelledby="pills-prevention-tab">
+
+                            Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided by your local public health agency.
+                            
+                            To prevent the spread of COVID-19:
+                            • Clean your hands often. Use soap and water, or an alcohol-based hand rub.
+                            • Maintain a safe distance from anyone who is coughing or sneezing.
+                            • Don’t touch your eyes, nose or mouth.
+                            • Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.
+                            • Stay home if you feel unwell.
+                            • If you have a fever, cough and difficulty breathing, seek medical attention. Call in advance.
+                            • Follow the directions of your local health authority.
+                            
+                            Avoiding unneeded visits to medical facilities allows healthcare systems to operate more effectively, therefore protecting you and others.</div>
+                        <div class="tab-pane fade" id="pills-treatments" role="tabpanel" aria-labelledby="pills-treatments-tab">
+
+                            To date, there are no specific vaccines or medicines for COVID-19.
+                            
+                            Treatments are under investigation, and will be tested through clinical trials.
+                            
+                            Self care
+                            
+                            If you feel sick you should rest, drink plenty of fluid, and eat nutritious food. Stay in a separate room from other family members, and use a dedicated bathroom if possible. Clean and disinfect frequently touched surfaces.
+                            
+                            Everyone should keep a healthy lifestyle at home. Maintain a healthy diet, sleep, stay active, and make social contact with loved ones through the phone or internet. Children need extra love and attention from adults during difficult times. Keep to regular routines and schedules as much as possible.
+                            
+                            It is normal to feel sad, stressed, or confused during a crisis. Talking to people you trust, such as friends and family, can help. If you feel overwhelmed, talk to a health worker or counsellor.</div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section starts -->
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav justify-content-center" style="margin-top:50px;background-color:#f8f9fa;">
+                <li class="nav-item">
+                    <a class="nav-link active footer-link" href="#">About XDezo Technologies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer-link" href="#">Privacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer-link" href="#">Terms</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- footer section ends -->
+
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  </html>

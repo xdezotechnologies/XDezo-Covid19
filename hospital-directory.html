@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>XDeoz Covid19</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- font family  -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet"> 
+
+    <style>
+        /* navbar */
+        .custom-section {
+            padding:0px !important;
+
+        }
+        .navbar-brand {
+            font-size:25px;
+            font-weight: bold;
+            font-family: 'Righteous', cursive;
+        }
+
+        .nav-link {
+            font-size:18px;
+            padding-right: 25px !important;
+            outline:none;
+            font-family: 'Monda', sans-serif;
+        }
+        .font-alfa {
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 30px;
+        }
+
+        .data-show {
+            font-size:35px;
+        }
+
+        .infected-card {
+            background-color:#afcfea;
+        }
+
+        .deaths-card {
+            background-color:#ffdfdf;
+        }
+
+        .recovered-card {
+            background-color: #d0f9d4;
+        }
+
+
+        .search-by-country-title {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .search-by-country-card {
+            background-color:#d9e3d8;
+            transition: border-radius,background-color;
+            transition-duration: 1s,1s;
+        }
+
+        .search-by-country-card:hover {
+            border-radius:10px;
+            background-color:#C1FFCE;
+        }
+
+        .search-by-country-name {
+            font-size: 20px;
+            text-decoration: none !important;
+            color:black;
+            font-family: 'Coiny', cursive;
+        }
+
+        .search-by-country-name:hover {
+            color:black;
+        }
+
+        .search-by-country-input {
+            height:50px;
+        }
+
+        .search-by-country-input:hover {
+            border-bottom: 1px solid black;
+        }
+
+        .footer-link {
+            color:black;
+            font-family: 'Monda', sans-serif;
+        }
+
+        .hospital-directory {
+            padding-left:0px; 
+            padding-right:0px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <div class="container-fluid custom-section">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="col-md-6">
+                <a class="navbar-brand" href="#">XDezo Covid19</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="col-md-6">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hospital-directory.html">Hospital Directory</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Helpful Websites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Top Github Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar ends -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 hospital-directory">
+            <div class="hospital-directory-bg">
+                <img class="hospital-directory-image" src="hospital_directory.jpg" alt="Hospital Directory Image" style="width:100%;height:200px;">
+            </div>
+        </div>
+            <div class="col-md-12 mt-2">
+                <h1 class="search-by-country-title w-100 text-center">Search Hospitals</h1>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+            </div>
+            <div class="col-md-12">             
+                    <div class="card-deck">
+                        <div class="card mt-2" style="background-color:#326432;">
+                            <div class="card-body">
+                                <h4 class="card-title">Pokhara Hospital and Research Center</h4>
+                                <p class="card-text">Address: Prithvi Hwy, Pokhara 33700 <br> Phone: 9825174992</p>
+                                
+                               <img class="float-right"   src="hospital_icon.png" alt="Hospital Icon" style="height:80px;width:80px;position:absolute;top:20px;left:90%;">
+                            </div>
+                        </div>
+                    </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+        <!-- footer section starts -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav justify-content-center" style="margin-top:50px;background-color:#f8f9fa;">
+                    <li class="nav-item">
+                        <a class="nav-link active footer-link" href="#">About XDezo Technologies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-link" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-link" href="#">Terms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer section ends -->
+    
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </body>
+      </html>
